@@ -17,19 +17,12 @@ export default function Users(sequelize: Sequelize) {
             allowNull: false,
             unique: true,
         },
+        username: {
+            type: DataTypes.STRING(255),
+            allowNull: false,
+            unique: true,
+        },
         password: {
-            type: DataTypes.STRING(255),
-            allowNull: true,
-        },
-        validated: {
-            type: DataTypes.BOOLEAN,
-            allowNull: true,
-        },
-        signUpToken: {
-            type: DataTypes.STRING(255),
-            allowNull: true,
-        },
-        resetPasswordToken: {
             type: DataTypes.STRING(255),
             allowNull: true,
         },

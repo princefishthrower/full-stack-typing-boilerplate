@@ -9,8 +9,8 @@ const app = express();
 
 // CORS
 const oCorsOptions = {
-    origin: ['localhost:3000'],
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    origin: ['http://localhost:3000'],
+    optionsSuccessStatus: 200,
 };
 app.use(cors(oCorsOptions));
 
@@ -19,3 +19,5 @@ app.use('/', Router);
 
 // create HTTP server
 http.createServer(app).listen(Constants.BACKEND_PORT);
+
+console.log('Backend server listening at ' + Constants.BACKEND_PORT + '!')

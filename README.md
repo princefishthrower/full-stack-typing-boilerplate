@@ -4,11 +4,14 @@ This is a starter boilerplate to help you quickly build out fully typed API endp
 
 This project corresponds to [this blog post.]().
 
-Further improvements would include:
+Further improvements (which I may make shortly in a follow up post) would include:
 
 - Advanced logging
 - Swagger TypeScript decorators and API definition generation
 - Advanced error handling
+- Build pipelines and watchman for even faster dev (currently both `npm run dev` commands only run webpack and then the artifacts, and do not initiate file watchers of any sort)
+
+However, these features and improvements would bloat the overall codebase. As for now, this current repository is the most skeleton I could consider while still providing the power of tools like `TypeScript` and `sequelize`.
 
 ## Prerequisites:
 

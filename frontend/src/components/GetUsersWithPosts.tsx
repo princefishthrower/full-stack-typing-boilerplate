@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import IUserWithPosts from "../../shared/interfaces/IUserWithPosts";
-import Constants from "../../shared/Constants/Constants";
+import IUserWithPosts from "../../../shared/interfaces/IUserWithPosts";
+import Constants from "../../../shared/Constants/Constants";
 
 export default function GetUsersWithPosts() {
   const [usersWithPosts, setUsersWithPosts] = useState<Array<IUserWithPosts> | undefined>(undefined);

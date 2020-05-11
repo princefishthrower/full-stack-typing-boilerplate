@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import IUser from "../../shared/interfaces/IUser";
-import Constants from "../../shared/Constants/Constants";
+import IUser from "../../../shared/interfaces/IUser";
+import Constants from "../../../shared/Constants/Constants";
 
 export default function GetUser() {
   const [user, setUser] = useState<IUser | undefined>(undefined);

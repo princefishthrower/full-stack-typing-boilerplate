@@ -17,7 +17,10 @@ export async function migrations() {
         await DB.posts.bulkCreate(testPosts);
         console.log('Posts table test data imported successfully');
 
-        console.log('Done! No errors!');
+        console.log('Done! No errors! Closing...');
+        await DB.sequelize.close();
+        console.log('Done.');
+
     } catch (err) {
         console.log('An error occur while creating the tables and test data: ' + err);
     }
