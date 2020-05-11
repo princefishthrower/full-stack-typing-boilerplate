@@ -1,0 +1,32 @@
+[
+  {
+    "userId": 1,
+    "title": "Hello World Title",
+    "subtitle": "heres my hello world subtitle"
+  },
+  {
+    "userId": 1,
+    "title": "Another Title",
+    "subtitle": "hahahahahaha"
+  },
+  {
+    "userId": 1,
+    "title": "Wow Already My Third Title",
+    "subtitle": "something something something"
+  },
+  {
+    "userId": 2,
+    "title": "Hello World Title for test user 2",
+    "subtitle": "heres my hello world subtitle"
+  },
+  {
+    "userId": 3,
+    "title": "First post for test user 3",
+    "subtitle": "hahahahahaha"
+  },
+  {
+    "userId": 3,
+    "title": "Second Post for test user 3",
+    "subtitle": "something something something"
+  }
+]
