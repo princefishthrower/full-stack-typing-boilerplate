@@ -1,10 +1,12 @@
 # Full Stack Typing Boilerplate
 
-This is a starter boilerplate to help you quickly build out fully typed API endpoints, where the frontend and backend applications derive their typings from a single shared source of truth.
+This is a starter boilerplate to help you quickly build out fully typed API endpoints, where the frontend application and backend server derive their typings from a single shared source of truth.
+
+**Node.js Version >= 10.19.0**
 
 This project corresponds to [this blog post.]().
 
-Further improvements (which I may make shortly in a follow up post) would include:
+Further improvements (which I may make in a follow up repository & post) would include:
 
 - Advanced logging
 - Swagger TypeScript decorators and API definition generation
@@ -16,7 +18,7 @@ However, these features and improvements would bloat the overall codebase. As fo
 ## Prerequisites:
 
 - An accessible instance of PostgreSQL
-- These 3 environmental variables must exist in your `process.env` to ensure the PostgreSQL connection will work (and make sure the database with `FULL_STACK_TYPING_DB_NAME` has been created, i.e.: `psql postgres` then `CREATE DATABASE whatever_db_name_you_want_here;` 
+- These 3 environmental variables must exist in your environment variables (i.e. `process.env`) to ensure the PostgreSQL connection will work (and make sure the database with `FULL_STACK_TYPING_DB_NAME` has been created, i.e.: `psql postgres` then `CREATE DATABASE whatever_db_name_you_want_here;` 
 
 ```bash
 FULL_STACK_TYPING_DB_NAME=the name of the db you want to use
@@ -43,8 +45,8 @@ Within the `backend/` folder, start up the backend server with:
 
 ## Start Frontend Server
 
-In a different terminal, within the `frontend/` folder, start up the frontend server with:
+In a separate terminal, within the `frontend/` folder, start up the frontend server with:
 
 `npm run dev`
 
-Feast your eyes on the wonderful types!
+Feast your eyes on the wonderful typing system!
