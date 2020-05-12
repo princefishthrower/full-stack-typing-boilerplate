@@ -2,7 +2,7 @@
 
 This is a starter boilerplate to help you quickly build out fully typed API endpoints, where the frontend application and backend server derive their typings from a single shared source of truth.
 
-This repository is based on [this blog post]().
+This repository is based on [this blog post](https://chrisfrew.in/blog/sequelize-and-typescript-rest-once-you-orm-you-never-go-back/).
 
 Further improvements (which I may make in a follow up repository & post) would include:
 
