@@ -2,7 +2,6 @@
   "name": "full-stack-typing-boilerplate-backend",
   "version": "1.0.0",
   "description": "Backend for a full stack typed app.",
-  "main": "server.js",
   "scripts": {
     "build": "webpack --mode 'development'",
     "dev": "npm run build && node dist/server.js",
