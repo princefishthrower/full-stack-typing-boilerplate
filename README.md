@@ -2,21 +2,21 @@
 
 This is a starter boilerplate to help you quickly build out fully typed API endpoints, where the frontend application and backend server derive their typings from a single shared source of truth.
 
-This project corresponds to [this blog post]().
+This repository is based on [this blog post]().
 
 Further improvements (which I may make in a follow up repository & post) would include:
 
 - Advanced logging
 - Swagger TypeScript decorators and API definition generation
 - Advanced error handling
-- Build pipelines and watchman for even faster dev (currently both `npm run dev` commands only run webpack and then the artifacts, and do not initiate file watchers of any sort)
+- Build pipelines and file watchers for even faster dev (currently both `npm run dev` commands only run webpack and then the artifacts, and do not initiate file watchers of any sort)
 
 However, these features and improvements would bloat the overall codebase. This repository is the most skeleton I could manage. Additional dependencies outside of the typical webpack, react, and typescript packages include only these four packages:
 
-`sequelize`
-`pg` (needed with `sequelize` for PostgreSQL connections)
-`express`
-`html-webpack-plugin`
+- `sequelize`
+- `pg` (needed with `sequelize` for PostgreSQL connections)
+- `express`
+- `html-webpack-plugin`
 
 ## Prerequisites:
 
@@ -38,18 +38,20 @@ Run `npm install` in both the `backend/` and `frontend/` folders.
 
 Create the test data tables in your database:
 
-`cd backend`
-`npm run migrations`
+```bash
+cd backend
+npm run migrations
+```
 
 ## Start Backend Server
 
-Within the `backend/` folder, start up the backend server with:
+Within the `backend/` folder, package and start up the backend server with:
 
 `npm run dev`
 
 ## Start Frontend Server
 
-In a separate terminal, within the `frontend/` folder, start up the frontend server with:
+In a separate terminal, within the `frontend/` folder, package and start up the frontend server with:
 
 `npm run dev`
 
