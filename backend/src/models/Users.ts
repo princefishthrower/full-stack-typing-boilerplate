@@ -18,13 +18,9 @@ export default function Users(sequelize: Sequelize) {
             unique: true,
         },
         username: {
-            type: DataTypes.STRING(255),
+            type: DataTypes.STRING(30),
             allowNull: false,
             unique: true,
-        },
-        password: {
-            type: DataTypes.STRING(255),
-            allowNull: true,
         },
     });
     return Users;
