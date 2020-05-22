@@ -61,7 +61,6 @@ const reactAppConfig = {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist', 'public')
     },
-    target: 'web',
     plugins: [
         htmlPlugin
     ]
